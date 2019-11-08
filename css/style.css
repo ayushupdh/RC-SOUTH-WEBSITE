@@ -1,0 +1,57 @@
+/* for footer */
+html {
+  position: relative;
+  min-height: 100%;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+}
+
+/* set uniform font */
+body{
+  font: 18px/1.5 'Karla', Helvetica, sans-serif;
+}
+
+/* Home Page background picture  */
+.picture{
+    position: relative;
+    min-height: 400px;
+}
+.picture::before{
+  content: "";
+  position: absolute;
+  width: 100%; height: 100%;
+  background: url('../img/RCS.jpg') no-repeat 1px  ;
+  background-size:cover; 
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
+
+.picture-content {
+    position: relative;
+    text-align: center;
+    color:white;
+    text-shadow:2px 4px 3px rgba(0, 0, 0, 0.3);
+    overflow: auto;
+  }
+  
+/* Home Page header image fonts */
+#header-font{
+  font-size: 5rem;;
+}
+#subheader-font{
+  font-size: 1.5rem;
+}
+
+/* Borders for the pages */
+  .border-3 {
+    border-left: 3px solid red; 
+    border-width:3px ;
+}
+
+.btn_text{
+  font-size: 2rem;
+}
