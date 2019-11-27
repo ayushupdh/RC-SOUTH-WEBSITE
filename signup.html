@@ -17,7 +17,7 @@
 
 <body>
     <!-- Addded to seperate footer from the body-->
-    <div class=" mb-5  pb-3">
+    <div class=" mb-5  pb-5">
 
         <!-- header starts -->
         <header>
@@ -32,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ml-auto mr-5 ">
                         <li class="nav-item pr-2">
-                            <a class="nav-link active" href="./index.html">
+                            <a class="nav-link " href="./index.html">
                                 <h4>Home</h4><span class="sr-only">(current)</span>
                             </a>
                         </li>
@@ -46,16 +46,27 @@
                                 <h4>Staff</h4>
                             </a>
                         </li>
-                        <li class="nav-item pr-2">
+                        <li class="nav-item pr-2 ">
                             <a class="nav-link" href="./faq.html">
                                 <h4>FAQ?</h4>
                             </a>
                         </li>
-                        <li class="nav-item pr-2">
+                        <li class="nav-item pr-2 hide-display applylink">
+                            <a class="nav-link" href="./apply.html">
+                                <h4>Apply Now!</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item pr-2 hide-display" id="logoutlink">
+                            <a class="nav-link">
+                                <h4>Logout</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item pr-2 active signinlink">
                             <a class="nav-link" href="./signup.html">
                                 <h4>Sign In</h4>
                             </a>
                         </li>
+
                         <li class="nav-item dropdown">
                         </li>
                     </ul>
@@ -65,40 +76,28 @@
 
 
         <div class="  m-5 form-container">
-                <div class="row">
-                    <div class="col-sm-9 card card-signin col-md-7 col-lg-5 mx-auto">
-                            <div class="card-body p-5">
 
-                                              <h1 class="card-title text-center">Create an Account</h1>
+            <div class="row">
 
-                        <!-- <h2 class="text-center mb-4">Sign In</h2> -->
-                        <form class="form-signin">
-                            <div class="form-label-group my-4">
-                                <label for="userFirstName" class="px-2"> First Name</label>
-                                <input type="Text" id="userFirstName" class="form-control my-2" placeholder="First Name"
-                                    required autofocus>
-                            </div>
-                            <div class="form-label-group my-4">
-                                    <label for="userLastName" class="px-2">Last Name</label>
-                                    <input type="Text" id="userLastName" class="form-control my-2" placeholder="Last Name"
-                                        required autofocus>
-                                </div>
-                                <div class="form-label-group my-4">
-                                        <label for="inputEmail" class="px-2">Email</label>
-                                        <input type="email" id="inputEmail" class="form-control my-2" placeholder="Email address"
-                                            required autofocus>
-                                    </div>
+                <div class="col-sm-9 card card-signin col-md-7 col-lg-5 mx-auto p-0">
 
-                            <div class="form-label-group my-4">
-                                <label for="inputPassword" class="px-2">Password</label>
-                                <input type="password" id="inputPassword" class="form-control my-2" placeholder="Password"
-                                    required>
-                            </div>
 
-                            <button class="btn btn-lg btn-primary btn-block text-uppercase my-5 " type="submit">Create an Account
-                                </button>
+                    <!-- Sign In Tab -->
 
-                            <div> <a href="./signin.html"> Sign in instead</a></div>
+                    <ul class=" container-fluid list-unstyled rounded">
+                        <div class="row">
+                            <li class="col tab-active tabs text-center p-3 " id="signinTab">Sign In</li>
+                        </div>
+
+                    </ul>
+
+                    <div class="card-body">
+                        <!-- Sign In Tab -->
+                        <form class="form-signin " id="signinForm">
+                            <button class="btn btn-lg btn-info btn-block text-uppercase my-4 " id="signInButton"
+                                type="submit">Signin with Google</button>
+
+
 
                         </form>
                     </div>
@@ -106,7 +105,30 @@
 
             </div>
         </div>
+    </div>
+    <footer class="bg-dark text-white  text-center py-1  ml-auto">
+        <div> Copyright 2019 - RCS</div>
+        <div id="day" class="">Day</div>
+        <div id="time" class="">Time</div>
+    </footer>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
+
+
+    <script src=js/key.js> </script> 
+    <script src="js/signin.js"></script>
+    <script src=js/time.js> </script> 
 </body>
-
-</html>
+ </html>

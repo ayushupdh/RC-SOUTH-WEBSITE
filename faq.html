@@ -51,6 +51,21 @@
                                 <h4>FAQ?</h4><span class="sr-only">(current)</span>
                             </a>
                         </li>
+                        <li class="nav-item active pr-2 hide-display applylink">
+                            <a class="nav-link" href="./apply.html">
+                                <h4>Apply Now!</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item pr-2 hide-display" id="logoutlink">
+                            <a class="nav-link">
+                                <h4>Logout</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item pr-2 signinlink" >
+                                <a class="nav-link"href="./signup.html" >
+                                    <h4>Sign In</h4>
+                                </a>
+                            </li>
                         <li class="nav-item dropdown">
                         </li>
                     </ul>
@@ -194,9 +209,12 @@
     </div>
 
     <!-- FOOTER -->
-    <footer class="text-center footer py-3 bg-dark text-white">
-        <p> Copyright 2019 - Residential College South</p>
+    <footer class="bg-dark text-white text-center pt-2 ml-auto">
+            <div > Copyright 2019 - RCS</div>
+            <div id="day"class=""   >Day</div>
+            <div id="time" class="">Time</div>
     </footer>
+
 
     <!-- Bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -209,6 +227,14 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+         <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
+
+
+    <script src=./key.js> </script> <script src="./main.js"></script>
+    <script src=./time.js> </script> 
 </body>
 
 </html>

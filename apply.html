@@ -12,14 +12,13 @@
     <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
     <!-- Custom css -->
     <link href="./css/style.css" rel="stylesheet">
-    <title>RC SOUTH | HOME</title>
+    <title>RC SOUTH | FAQ</title>
 </head>
 
-<body class="m-0">
+<body>
 
     <!-- Addded to seperate footer from the body-->
-    <div class=" mb-5  pb-3">
-
+    <div class=" mb-5  pb-5">
         <!-- header starts -->
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
@@ -33,8 +32,8 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ml-auto mr-5 ">
                         <li class="nav-item pr-2">
-                            <a class="nav-link active" href="./index.html">
-                                <h4>Home</h4><span class="sr-only">(current)</span>
+                            <a class="nav-link " href="./index.html">
+                                <h4>Home</h4>
                             </a>
                         </li>
                         <li class="nav-item  pr-2">
@@ -42,17 +41,11 @@
                                 <h4>Facilites</h4>
                             </a>
                         </li>
-                        <li class="nav-item pr-2">
+                        <li class="nav-item  pr-2">
                             <a class="nav-link" href="./staff.html">
                                 <h4>Staff</h4>
                             </a>
                         </li>
-                        <li class="nav-item pr-2">
-                            <a class="nav-link" href="./faq.html">
-                                <h4>FAQ?</h4>
-                            </a>
-                        </li>
-                      
                         <li class="nav-item pr-2 signinlink">
                             <a class="nav-link" href="./signup.html">
                                 <h4>Sign In</h4>
@@ -73,68 +66,38 @@
                     </ul>
                 </div>
             </nav>
+            <nav class=" navbar-light p-1 bg-dark text-white">
+                <h2> Track your Application</h2>
+            </nav>
         </header>
-        <!-- header ends -->
 
-        <!-- homepage image and title -->
-        <section class="picture">
+        <div class="container mt-5   ">
 
-            <div class="picture-content">
-                <h1 class="pt-5 font-weight-bold" id="header-font">Residential College South</h1>
-                <p class="pt-5 " id="subheader-font">A community of learning dedicated to nurturing excellence in
-                    intellectual inquiry and personal
-                    character<br>
-                    in an open and diverse environment</p>
-            </div>
-        </section>
 
-        <!-- Main Body -->
-        <section>
-            <div class="container">
-                <div class="mt-5 mb-4">
-                    <h1 class="mb-3 font-weight-bold"> Welcome to RC South!</h1>
-                    <p>The Residential College is unique among residential housing units at the University of
-                        Mississippi.
-                        This 466-bed co-ed facility cultivates a culture of student engagement setting it apart from
-                        other
-                        housing options.
-                        Most important, students have the option of remaining at the RC all four years while completing
-                        their undergraduate education.</p>
+
+            <div class="card w-75  mx-auto m-3">
+                <div class="card-header h3">
+                    Step 1
                 </div>
-                <div id="text"></div>
-
-                <!-- Apply Now Button -->
-                <div class="box2 mb-5">
-                    <form action="./signup.html">
-                        <button class="btn btn-info btn-lg mt-2">Apply Now!</button>
-                    </form>
-
-                </div>
-
-                <h2 class="mb-4"> RC Hall Video</h2>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item rounded pb-5" src="https://www.youtube.com/embed/KU4BtngHGdQ"
-                        allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">Complete the housing form </h5>
+                    <p class="card-text">Go to student housing website to submit the form..</p>
+                    <button type="button" class="btn btn-info" id="step1Button">Done</button>
                 </div>
             </div>
 
-
-        </section>
-
+        </div>
     </div>
-    <!-- body part of the website ends -->
 
-    <!-- Footer begins -->
-    <footer class="bg-dark footer text-white text-center pt-2 ">
+
+    <footer class="bg-dark footer text-white text-center  pt-2">
         <div> Copyright 2019 - RCS</div>
-        <div id="day" class="">Day</div>
-        <div id="time" class="">Time</div>
-
-
-
+        <div id="day">Day</div>
+        <div id="time">Time</div>
     </footer>
 
-    <!-- Bootstrap javascripts -->
+
+    <!-- Bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -144,17 +107,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-      <!-- The core Firebase JS SDK is always required and must be listed first -->
-      <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
-  
-  
-      <script src=js/key.js> </script> <script src="js/auth.js"></script>
-
-      <script src=js/time.js> </script> 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
 
 
-</body>
-
-</html>
+    <script src="js/key.js"> </script> <script src="js/time.js"> </script> <script src="js/auth.js"> </script>
+    <script src="js/apply.js"></script>
+ </body> </html>
