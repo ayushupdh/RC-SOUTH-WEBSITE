@@ -36,7 +36,7 @@ function signinUser(e) {
             document.getElementsByClassName('applylink')[0].style.display = "block";
             document.getElementById('logoutlink').style.display = "block";
             document.getElementsByClassName('signinlink')[0].style.display = "none";
-            window.open("apply.html", "_top");
+            window.open("contact.html", "_top");
 
         }
 

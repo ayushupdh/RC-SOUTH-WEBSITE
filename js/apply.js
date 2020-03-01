@@ -11,7 +11,11 @@ step1Button.addEventListener('click', (e)=>{
     e.preventDefault();
 
     createCard("Step 3", "Wait for your application to get approved", "In the meanwhile if you have any question about the application. Please contact Ms Sue.", "step4button");
-    step2Button.disabled=true;
+    const step4button = document.getElementById('step4button');
+
+    step4button.addEventListener('click', (e)=>{
+      window.open('contact.html' , '_top');
+    })
 
 });
 });
